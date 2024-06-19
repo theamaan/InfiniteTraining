@@ -1,0 +1,7 @@
+D:\InfiniteTraining\cSharp\Assessment\Code Challenge 2\Solution\MyConsoleApp\bin\Debug\MyConsoleApp.exe.config
+D:\InfiniteTraining\cSharp\Assessment\Code Challenge 2\Solution\MyConsoleApp\bin\Debug\MyConsoleApp.exe
+D:\InfiniteTraining\cSharp\Assessment\Code Challenge 2\Solution\MyConsoleApp\bin\Debug\MyConsoleApp.pdb
+D:\InfiniteTraining\cSharp\Assessment\Code Challenge 2\Solution\MyConsoleApp\obj\Debug\MyConsoleApp.csproj.AssemblyReference.cache
+D:\InfiniteTraining\cSharp\Assessment\Code Challenge 2\Solution\MyConsoleApp\obj\Debug\MyConsoleApp.csproj.CoreCompileInputs.cache
+D:\InfiniteTraining\cSharp\Assessment\Code Challenge 2\Solution\MyConsoleApp\obj\Debug\MyConsoleApp.exe
+D:\InfiniteTraining\cSharp\Assessment\Code Challenge 2\Solution\MyConsoleApp\obj\Debug\MyConsoleApp.pdb
