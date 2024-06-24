@@ -74,31 +74,31 @@ namespace OOPS
         {
             Accounts account = new Accounts(100, "Amaan", "Savings", "d", 0, 10000);
 
-            // Show initial data
+            
             Console.WriteLine("Initial account data:");
             account.Show();
 
-            // Perform a deposit
+            
             Console.WriteLine("\nPerforming a deposit of 500...");
             account.UpdateBalance("d", 500);
             account.Show();
 
-            // Perform a withdrawal
+            
             Console.WriteLine("\nPerforming a withdrawal of 300...");
             account.UpdateBalance("w", 300);
             account.Show();
 
-            // Attempt an invalid transaction type
+            
             Console.WriteLine("\nAttempting an invalid transaction type...");
             account.UpdateBalance("x", 100);
             account.Show();
 
-            // Attempt a withdrawal with insufficient balance
+            
             Console.WriteLine("\nAttempting a withdrawal of 15000...");
             account.UpdateBalance("w", 15000);
             account.Show();
 
-            Console.ReadLine(); // Keeps the console window open
+            Console.ReadLine();
         }
     }
 }
