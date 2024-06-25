@@ -1,0 +1,7 @@
+D:\June Training\C#\consoleApp\consoleApp\bin\Debug\consoleApp.exe.config
+D:\June Training\C#\consoleApp\consoleApp\bin\Debug\consoleApp.exe
+D:\June Training\C#\consoleApp\consoleApp\bin\Debug\consoleApp.pdb
+D:\June Training\C#\consoleApp\consoleApp\obj\Debug\consoleApp.csproj.AssemblyReference.cache
+D:\June Training\C#\consoleApp\consoleApp\obj\Debug\consoleApp.csproj.CoreCompileInputs.cache
+D:\June Training\C#\consoleApp\consoleApp\obj\Debug\consoleApp.exe
+D:\June Training\C#\consoleApp\consoleApp\obj\Debug\consoleApp.pdb

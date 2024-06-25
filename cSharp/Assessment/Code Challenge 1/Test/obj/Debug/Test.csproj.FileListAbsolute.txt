@@ -1,0 +1,7 @@
+D:\June Training\Test\Test\bin\Debug\Test.exe.config
+D:\June Training\Test\Test\bin\Debug\Test.exe
+D:\June Training\Test\Test\bin\Debug\Test.pdb
+D:\June Training\Test\Test\obj\Debug\Test.csproj.AssemblyReference.cache
+D:\June Training\Test\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+D:\June Training\Test\Test\obj\Debug\Test.exe
+D:\June Training\Test\Test\obj\Debug\Test.pdb
