@@ -4,15 +4,11 @@ namespace Test
 {
     class Integer
     {
-        public string IntegerPositive(int num)
+        public void CheckPositive(int num)
         {
-            if (num > 0)
+            if (num <= 0)
             {
-                return "The number is positive";
-            }
-            else
-            {
-                return "The number is negative or zero";
+                throw new ArgumentException("The number must be positive.");
             }
         }
 
@@ -21,10 +17,27 @@ namespace Test
             Integer integer = new Integer();
 
             Console.Write("Enter a number: ");
-            int num = int.Parse(Console.ReadLine());
+            int num;
 
-            string result = integer.IntegerPositive(num);
-            Console.WriteLine(result);
+            try
+            {
+                num = int.Parse(Console.ReadLine());
+                integer.CheckPositive(num);
+                Console.WriteLine("The number is positive.");
+            }
+            catch (ArgumentException e)
+            {
+                Console.WriteLine($"Error: {e.Message}");
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Invalid input format. Please enter a valid integer.");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine($"An error occurred: {e.Message}");
+            }
+
             Console.ReadLine();
         }
     }
