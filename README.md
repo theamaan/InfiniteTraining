@@ -3,6 +3,16 @@
 ![Screenshot 2024-06-26 110923](https://github.com/theamaan/InfiniteTraining/assets/90848726/423a39b4-f00e-41d3-a873-89c3ea002e48)
 
 
+#Output of CC2 Part 1:
+
+![Screenshot 2024-06-26 163714](https://github.com/theamaan/InfiniteTraining/assets/90848726/400f24ec-6afd-4006-907a-cdb772b0392d)
+
+
+#Output of CC2 Part 2:
+
+![Screenshot 2024-06-26 164327](https://github.com/theamaan/InfiniteTraining/assets/90848726/3ececf6f-751b-42f0-90fa-761f8ab274ce)
+
+
 #Output of First Assignment:
 
 ![Screenshot 2024-06-26 110418](https://github.com/theamaan/InfiniteTraining/assets/90848726/23d01352-ea46-47bc-a3a7-a085094f4e2a)
