@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>OOPS.Accounts</StartupObject>
+    <StartupObject>OOPS.SalesDetails</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

@@ -1,50 +1,64 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OOPS
 {
     class SalesDetails
     {
-        public int salesNo;
-        public int productNo;
-        public int price;
-        public DateTime dateOfSale;
-        public int quantity;
-        public int totalAmount;
+        public int SalesNo { get; set; }
+        public int ProductNo { get; set; }
+        public int Price { get; set; }
+        public DateTime DateOfSale { get; set; }
+        public int Quantity { get; set; }
+        public int TotalAmount { get; private set; }
 
         public SalesDetails(int salesNo, int productNo, int price, DateTime dateOfSale, int quantity)
         {
-            this.salesNo = salesNo;
-            this.productNo = productNo;
-            this.price = price;
-            this.dateOfSale = dateOfSale;
-            this.quantity = quantity;
-            sales();
+            SalesNo = salesNo;
+            ProductNo = productNo;
+            Price = price;
+            DateOfSale = dateOfSale;
+            Quantity = quantity;
+            CalculateTotalAmount();
         }
-        public void sales()
+
+        private void CalculateTotalAmount()
         {
-            this.totalAmount = this.quantity * this.price;
+            TotalAmount = Quantity * Price;
         }
+
         public void ShowData()
         {
-            Console.WriteLine("Sales No: " + this.salesNo);
-            Console.WriteLine("Product No: " + this.productNo);
-            Console.WriteLine("Price: " + this.price);
-            Console.WriteLine("Date of Sale: " + dateOfSale.ToShortDateString());
-            Console.WriteLine("Quantity: " + this.quantity);
-            Console.WriteLine("Total Amount: " + this.totalAmount);
+            Console.WriteLine("Sales No: " + SalesNo);
+            Console.WriteLine("Product No: " + ProductNo);
+            Console.WriteLine("Price: " + Price);
+            Console.WriteLine("Date of Sale: " + DateOfSale.ToShortDateString());
+            Console.WriteLine("Quantity: " + Quantity);
+            Console.WriteLine("Total Amount: " + TotalAmount);
         }
-        static void Main(string[] args)
-        {
 
-            SalesDetails sale = new SalesDetails(1, 100, 1200, DateTime.Now, 3);
+        public static void Main(string[] args)
+        {
+            Console.WriteLine();
+
+            Console.WriteLine("Enter the Number of sales: ");
+            int salesNo = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter the Product Number: ");
+            int productNo = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter the Price: ");
+            int price = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter the Quantity: ");
+            int quantity = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter the Date of Sale (yyyy-MM-dd): ");
+            DateTime dateOfSale = DateTime.Parse(Console.ReadLine());
+
+            SalesDetails sale = new SalesDetails(salesNo, productNo, price, dateOfSale, quantity);
 
             sale.ShowData();
             Console.ReadLine();
-
         }
     }
 }
