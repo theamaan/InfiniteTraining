@@ -16,3 +16,8 @@
 #Output of Third Assignment Part 1:-
 
 ![Screenshot 2024-06-26 115647](https://github.com/theamaan/InfiniteTraining/assets/90848726/ef589260-47a2-4a35-a3bc-d52247ce681a)
+
+
+#Output of Third Assignment Part 2:-
+
+![Screenshot 2024-06-26 120152](https://github.com/theamaan/InfiniteTraining/assets/90848726/2b3aa1fd-bfc0-4c9a-94a1-aaded77b2291)
