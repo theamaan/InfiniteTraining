@@ -21,3 +21,9 @@
 #Output of Third Assignment Part 2:-
 
 ![Screenshot 2024-06-26 120152](https://github.com/theamaan/InfiniteTraining/assets/90848726/2b3aa1fd-bfc0-4c9a-94a1-aaded77b2291)
+
+
+#Output of Third Assignment Part 3:-
+
+![Screenshot 2024-06-26 122012](https://github.com/theamaan/InfiniteTraining/assets/90848726/0dbced79-27cc-408b-8484-5733bca185fe)
+
