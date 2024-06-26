@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace OOPS
 {
-    public class Accounts
+    class Accounts
     {
         public int accountNo;
         public string customerName;
@@ -70,35 +70,36 @@ namespace OOPS
             Console.WriteLine("Balance: " + balance);
         }
 
-        public static void Main()
+        static void Main(string[] args)
         {
             Accounts account = new Accounts(100, "Amaan", "Savings", "d", 0, 10000);
 
-            
+
             Console.WriteLine("Initial account data:");
             account.Show();
 
-            
+
             Console.WriteLine("\nPerforming a deposit of 500...");
             account.UpdateBalance("d", 500);
             account.Show();
 
-            
+
             Console.WriteLine("\nPerforming a withdrawal of 300...");
             account.UpdateBalance("w", 300);
             account.Show();
 
-            
+
             Console.WriteLine("\nAttempting an invalid transaction type...");
             account.UpdateBalance("x", 100);
             account.Show();
 
-            
+
             Console.WriteLine("\nAttempting a withdrawal of 15000...");
             account.UpdateBalance("w", 15000);
             account.Show();
 
             Console.ReadLine();
+
         }
     }
 }

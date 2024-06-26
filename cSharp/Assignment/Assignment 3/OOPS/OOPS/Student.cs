@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace OOPS
 {
-
     class Student
     {
         private int rollNo;
@@ -36,15 +35,15 @@ namespace OOPS
         public void DisplayResult()
         {
             int sum = 0;
-            foreach(int mark in marks)
+            foreach (int mark in marks)
             {
                 sum += mark;
             }
             double average = (double)sum / 5;
-            Console.WriteLine("The Average Marks is "+average);
+            Console.WriteLine("The Average Marks is " + average);
 
             bool flag = false;
-            foreach (int mark in marks) 
+            foreach (int mark in marks)
             {
                 if (mark < 35)
                 {
@@ -59,19 +58,19 @@ namespace OOPS
             if (average > 50)
             {
                 Console.WriteLine("Passed");
-            }   
+            }
         }
         public void displayData()
         {
             Console.WriteLine("Roll Number " + rollNo);
-            Console.WriteLine("Name "+ name);
+            Console.WriteLine("Name " + name);
             Console.WriteLine("Standard " + standard);
-            Console.WriteLine("Semester "+ semester);
+            Console.WriteLine("Semester " + semester);
             Console.WriteLine("Branch " + branch);
             Console.WriteLine("Marks ");
-            for(int i = 0; i < 5; i++)
+            for (int i = 0; i < 5; i++)
             {
-                Console.WriteLine($"Subject{i+1}: {marks[i]}");
+                Console.WriteLine($"Subject{i + 1}: {marks[i]}");
             }
         }
         public static void Main(String[] main)
@@ -93,7 +92,7 @@ namespace OOPS
 
             int[] marks = new int[5];
 
-            // Create a Student object with the provided input
+            
             Student student = new Student(rollNo, name, standard, semester, branch, marks);
             student.getMarks();
             student.DisplayResult();

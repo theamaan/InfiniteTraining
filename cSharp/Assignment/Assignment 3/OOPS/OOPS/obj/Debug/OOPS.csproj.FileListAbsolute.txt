@@ -2,8 +2,6 @@ D:\InfiniteTraining\cSharp\Assignment\Assignment 3\OOPS\OOPS\bin\Debug\OOPS.exe.
 D:\InfiniteTraining\cSharp\Assignment\Assignment 3\OOPS\OOPS\bin\Debug\OOPS.exe
 D:\InfiniteTraining\cSharp\Assignment\Assignment 3\OOPS\OOPS\bin\Debug\OOPS.pdb
 D:\InfiniteTraining\cSharp\Assignment\Assignment 3\OOPS\OOPS\obj\Debug\OOPS.csproj.AssemblyReference.cache
-D:\InfiniteTraining\cSharp\Assignment\Assignment 3\OOPS\OOPS\obj\Debug\OOPS.Properties.Resources.resources
-D:\InfiniteTraining\cSharp\Assignment\Assignment 3\OOPS\OOPS\obj\Debug\OOPS.csproj.GenerateResource.cache
 D:\InfiniteTraining\cSharp\Assignment\Assignment 3\OOPS\OOPS\obj\Debug\OOPS.csproj.CoreCompileInputs.cache
 D:\InfiniteTraining\cSharp\Assignment\Assignment 3\OOPS\OOPS\obj\Debug\OOPS.exe
 D:\InfiniteTraining\cSharp\Assignment\Assignment 3\OOPS\OOPS\obj\Debug\OOPS.pdb
