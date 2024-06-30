@@ -1,0 +1,7 @@
+D:\InfiniteTraining\cSharp\Assignment\Assignment 5\NewProject\NewProject\bin\Debug\NewProject.exe.config
+D:\InfiniteTraining\cSharp\Assignment\Assignment 5\NewProject\NewProject\bin\Debug\NewProject.exe
+D:\InfiniteTraining\cSharp\Assignment\Assignment 5\NewProject\NewProject\bin\Debug\NewProject.pdb
+D:\InfiniteTraining\cSharp\Assignment\Assignment 5\NewProject\NewProject\obj\Debug\NewProject.csproj.AssemblyReference.cache
+D:\InfiniteTraining\cSharp\Assignment\Assignment 5\NewProject\NewProject\obj\Debug\NewProject.csproj.CoreCompileInputs.cache
+D:\InfiniteTraining\cSharp\Assignment\Assignment 5\NewProject\NewProject\obj\Debug\NewProject.exe
+D:\InfiniteTraining\cSharp\Assignment\Assignment 5\NewProject\NewProject\obj\Debug\NewProject.pdb
