@@ -42,3 +42,12 @@
 
 ![Screenshot 2024-06-26 122012](https://github.com/theamaan/InfiniteTraining/assets/90848726/0dbced79-27cc-408b-8484-5733bca185fe)
 
+
+#Output of Fourth Assignment Part 1:-
+
+![Screenshot 2024-07-02 143926](https://github.com/theamaan/InfiniteTraining/assets/90848726/950edb0b-6c02-4ed1-9688-2d7ebe480d71)
+
+
+#Output of Fourth Assignment Part 2:-
+
+![Screenshot 2024-07-02 144204](https://github.com/theamaan/InfiniteTraining/assets/90848726/2fc3f089-15ed-4545-bfad-a45adf37ac5f)
