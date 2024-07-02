@@ -1,4 +1,4 @@
-![image](https://github.com/theamaan/InfiniteTraining/assets/90848726/a3ce5261-130a-4006-81ef-5712384810c3)#Output of CC1
+#Output of CC1
 
 ![Screenshot 2024-06-26 110923](https://github.com/theamaan/InfiniteTraining/assets/90848726/423a39b4-f00e-41d3-a873-89c3ea002e48)
 
