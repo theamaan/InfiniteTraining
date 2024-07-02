@@ -1,4 +1,4 @@
-#Output of CC1
+![image](https://github.com/theamaan/InfiniteTraining/assets/90848726/a3ce5261-130a-4006-81ef-5712384810c3)#Output of CC1
 
 ![Screenshot 2024-06-26 110923](https://github.com/theamaan/InfiniteTraining/assets/90848726/423a39b4-f00e-41d3-a873-89c3ea002e48)
 
@@ -51,3 +51,17 @@
 #Output of Fourth Assignment Part 2:-
 
 ![Screenshot 2024-07-02 144204](https://github.com/theamaan/InfiniteTraining/assets/90848726/2fc3f089-15ed-4545-bfad-a45adf37ac5f)
+
+
+#Output of Fourth Assignment Part 3:-
+
+![Screenshot 2024-07-02 144526](https://github.com/theamaan/InfiniteTraining/assets/90848726/cff088f6-b3a6-4e0f-9502-d4190f89a7f7)
+
+
+#Output of Fourth Assignment Part 4:-
+
+![Screenshot 2024-07-02 144816](https://github.com/theamaan/InfiniteTraining/assets/90848726/4997debe-6852-41ef-94ff-bde550721fdf)
+
+
+#Output of Fourth Assignment Part 5:-
+
