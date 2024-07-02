@@ -80,14 +80,9 @@
 
 #Output of Fifth Assignment Part 3:-
 
-![Screenshot 2024-07-02 150828](https://github.com/theamaan/InfiniteTraining/assets/90848726/5c92c6b9-421b-4fb0-8264-bebe202c13aa)
-
-
-#Output of Fifth Assignment Part 4:-
-
 ![Screenshot 2024-07-02 151044](https://github.com/theamaan/InfiniteTraining/assets/90848726/44821791-90de-4c70-9627-e01194852f4e)
 
 
-#Output of Fifth Assignment Part 5:-
+#Output of Fifth Assignment Part 4:-
 
 ![Screenshot 2024-07-02 151224](https://github.com/theamaan/InfiniteTraining/assets/90848726/2b164e7d-fbb4-4347-93db-49e6f4c16679)
