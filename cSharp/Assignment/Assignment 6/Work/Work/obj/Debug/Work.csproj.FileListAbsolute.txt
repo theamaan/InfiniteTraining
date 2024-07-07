@@ -1,0 +1,7 @@
+D:\InfiniteTraining\cSharp\Assignment\Assignment 6\Work\Work\bin\Debug\Work.exe.config
+D:\InfiniteTraining\cSharp\Assignment\Assignment 6\Work\Work\bin\Debug\Work.exe
+D:\InfiniteTraining\cSharp\Assignment\Assignment 6\Work\Work\bin\Debug\Work.pdb
+D:\InfiniteTraining\cSharp\Assignment\Assignment 6\Work\Work\obj\Debug\Work.csproj.AssemblyReference.cache
+D:\InfiniteTraining\cSharp\Assignment\Assignment 6\Work\Work\obj\Debug\Work.csproj.CoreCompileInputs.cache
+D:\InfiniteTraining\cSharp\Assignment\Assignment 6\Work\Work\obj\Debug\Work.exe
+D:\InfiniteTraining\cSharp\Assignment\Assignment 6\Work\Work\obj\Debug\Work.pdb
