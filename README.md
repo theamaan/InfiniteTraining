@@ -28,6 +28,26 @@
 ![Screenshot 2024-07-03 125318](https://github.com/theamaan/InfiniteTraining/assets/90848726/8f140482-3513-4e49-85cb-fcbd08debf80)
 
 
+#Output of CC4 Part 1:
+
+![Screenshot 2024-07-10 101113](https://github.com/theamaan/InfiniteTraining/assets/90848726/7354f88f-c960-44f6-975f-22f995756a24)
+
+
+#Output of CC4 Part 1: File Created and Stored in the Desired Location:
+
+![Screenshot 2024-07-10 105114](https://github.com/theamaan/InfiniteTraining/assets/90848726/4337f325-a32c-47cb-9ac7-423678e67742)
+
+
+#Output of CC4 Part 2:
+
+![Screenshot 2024-07-10 102027](https://github.com/theamaan/InfiniteTraining/assets/90848726/bd08cfaf-0324-40d2-beaf-5dba0d4cbcf3)
+
+
+#Output of CC4 Part 3:
+
+![Screenshot 2024-07-10 102834](https://github.com/theamaan/InfiniteTraining/assets/90848726/e86b7686-a36f-45e1-b490-a609d167dc67)
+
+
 #Output of First Assignment:
 
 ![Screenshot 2024-06-26 110418](https://github.com/theamaan/InfiniteTraining/assets/90848726/23d01352-ea46-47bc-a3a7-a085094f4e2a)
