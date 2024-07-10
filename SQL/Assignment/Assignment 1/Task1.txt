@@ -1,0 +1,57 @@
+CREATE DATABASE infidb;
+
+USE infidb;
+-- Creating Clients Table
+CREATE TABLE Clients (
+    Client_ID INT PRIMARY KEY,
+    Cname VARCHAR(40) NOT NULL,
+    Address VARCHAR(30),
+    Email VARCHAR(30) UNIQUE,
+    Phone BIGINT,
+    Business VARCHAR(20) NOT NULL
+);
+
+-- To retrieve data from the table employee
+SELECT * FROM Clients;  --This command retrieves all columns and rows from the Clients table.
+
+-- Creating Departments Table
+CREATE TABLE Departments (
+    Deptno INT PRIMARY KEY,
+    Dname VARCHAR(15) NOT NULL,
+    Loc VARCHAR(20)
+);
+
+-- Creating Employees Table
+CREATE TABLE Employees (
+    Empno INT PRIMARY KEY,
+    Ename VARCHAR(20) NOT NULL,
+    Job VARCHAR(15),
+    Salary INT CHECK (Salary > 0),
+    Deptno INT,
+    FOREIGN KEY (Deptno) REFERENCES Departments(Deptno)
+);
+
+-- Creating Projects Table
+CREATE TABLE Projects (
+    Project_ID INT PRIMARY KEY,
+    Descr VARCHAR(30) NOT NULL,
+    Start_Date DATE,
+    Planned_End_Date DATE,
+    Actual_End_Date DATE CHECK (Actual_End_Date >= Planned_End_Date),
+    Budget BIGINT CHECK (Budget > 0),
+    Client_ID INT,
+    FOREIGN KEY (Client_ID) REFERENCES Clients(Client_ID)
+);
+
+-- Creating EmpProjectTasks Table
+CREATE TABLE EmpProjectTasks (
+    Project_ID INT,
+    Empno INT,
+    Start_Date DATE,
+    End_Date DATE,
+    Task VARCHAR(25) NOT NULL,
+    Status VARCHAR(15) NOT NULL,
+    PRIMARY KEY (Project_ID, Empno),
+    FOREIGN KEY (Project_ID) REFERENCES Projects(Project_ID),
+    FOREIGN KEY (Empno) REFERENCES Employees(Empno)
+);
