@@ -1,0 +1,67 @@
+select * from dbo.DEPT
+--Q1
+select * from dbo.emp where job = 'Manager';
+
+--Q2
+select ename, sal from dbo.emp where sal > 1000;
+
+--Q3 Display the names and salaries of all employees except JAMES.
+Select ename, sal from dbo.emp where ename <> 'JAMES'; --(<> is known as the not equal operator)
+
+--Q4 Display the details of the employees whose names begin with 'S'
+Select * from dbo.emp where ename like 'S%'; --(%S will return the names that ends with S)
+
+--Q5 Find out the names of all employees that have ‘A’ anywhere in their name. 
+Select * from dbo.emp where ename like '%A%';
+
+--Q6 Find out the names of all employees that have ‘L’ as their third character in their name. 
+Select * from dbo.emp where ename like '__L%'
+
+--Q7 Compute daily salary of JONES. 
+select ename, sal/30 as Daily_Salary from dbo.emp where ename = 'JONES';
+
+--Q8 Calculate the total monthly salary of all employees.
+Select SUM(sal) as Total_Monthly_Salary from dbo.emp;
+
+--Q9 Print the average annual salary.
+Select AVG(sal*12) as Average_Annual_Salary from dbo.emp;
+
+--Q10 Select the name, job, salary, department number of all employees except SALESMAN from department number 30. 
+select ename, job, sal, DEPTNO from dbo.emp where job <> 'salesman' and DEPTNO = 30; 
+
+--Q11 List unique departments of the EMP table.
+select distinct DEPTNO from dbo.emp;
+
+--Q12 List the name and salary of employees who earn more than 1500 and are in department 10 or 30. Label the columns Employee and Monthly Salary respectively.
+select ename as Employee, sal as [Monthly Salary] from dbo.emp where sal>1500 and (DeptNo = 10 or DeptNo=30);
+
+ --Q14:-Display the name, salary and commission for all employees whose commission amount is greater than their salary increased by 10%.
+select ename, sal, comm from dbo.emp where comm > sal*1.10;
+
+--Q15:-Display the name of all employees who have two Ls in their name and are in department 30 or their manager is 7782.
+select ename from dbo.emp where ename like '%L%L%' and (DEPTNO = 30 OR MGR_ID = 7782);
+
+--Q16:- Display the names of employees with experience of over 30 years and under 40 yrs. Count the total number of employees.
+select ename from dbo.emp where DATEDIFF(YEAR, HIREDATE, GETDATE()) > 30 and DATEDIFF(YEAR, HIREDATE, GETDATE()) < 40;
+-- Count the total number of employees with experience between 30 and 40 years.
+select COUNT(*) from dbo.emp where DATEDIFF(YEAR, HIREDATE, GETDATE()) > 30 and DATEDIFF(YEAR, HIREDATE, GETDATE()) < 40;
+
+--Q17:- Retrieve the names of departments in ascending order and their employees in descending order. 
+with DeptEmp as (
+    select D.DNAME as Department, E.ENAME as Employee
+    from dbo.DEPT D
+    join dbo.EMP E on D.DEPTNO = E.DEPTNO
+)
+select Department, Employee
+from DeptEmp
+order by Department asc, Employee desc;
+
+--Q18 Find out the experience of Miller
+with EmployeeExperience as (
+    select ENAME, HIREDATE,
+           DATEDIFF(YEAR, HIREDATE, GETDATE()) as Experience_Years
+    from dbo.EMP
+)
+select ENAME, Experience_Years
+from EmployeeExperience
+where ENAME = 'MILLER';
