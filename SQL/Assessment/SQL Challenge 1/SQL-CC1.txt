@@ -1,0 +1,52 @@
+--Write a query to display your birthday( day of week)
+select DATENAME(weekday, '2001-04-13') AS 'DaysOfWeek';
+
+--Write a query to display your age in days
+select DATEDIFF(DAY, '2001-04-13',GETDATE()) AS 'AgeOfAmaanInDays';
+
+--Write a query to display all employees information those who joined before 5 years in the current month
+ --(Hint : If required update some HireDates in your EMP table of the assignment)
+ 
+use infinitedatabase
+insert into dbo.emp (EMPNO, ENAME, JOB, MGR_ID, HIREDATE, COMM, DEPTNO) values
+(8969,'Vivek','Designer',1114,'2019-07-09',NULL,82);
+select * from dbo.emp
+where datediff(year,hiredate,getdate())>=5 and month(hiredate) = month(getdate());
+
+--Create table Employee with empno, ename, sal, doj columns and perform the following operations in a single transaction
+--	a. First insert 3 rows 
+--	b. Update the second row sal with 15% increment  
+--      c. Delete first row.
+--After completing above all actions how to recall the deleted row without losing increment of second row.
+
+SELECT * FROM DBO.EMP
+insert into dbo.emp (EMPNO, ENAME, JOB, MGR_ID, HIREDATE, COMM, DEPTNO) values
+(8960,'AMAAN','ENG',1111,'2024-09-09',NULL,80),
+(8961,'ANAS','LAWYER',1112,'2024-10-10',NULL,90),
+(8962,'MAYANK','ANALYST',1113,'2023-09-09',NULL,90)
+ 
+UPDATE dbo.emp set sal = 10000 where ENAME='ANAS'
+UPDATE dbo.emp SET sal = sal * 1.15 WHERE ename = 'ANAS';
+
+DELETE from dbo.emp where empno = 8960 AND ename = 'AMAAN';
+INSERT INTO dbo.emp (empno, ename, job, MGR_ID, hiredate, comm, sal)
+VALUES (8960, 'AMAAN', 'ENG', 1111, '2024-09-09', NULL, 80);
+
+--Q4:- Create a user defined function calculate Bonus for all employees of a  given job using 	following conditions
+	--a.     For Deptno 10 employees 15% of sal as bonus.
+	--b.     For Deptno 20 employees 20% of sal as bonus
+	--c.     For Others employees 5% of sal as bonus
+create function dbo.calcBonus(@DeptNo int, @Sal float)
+returns float
+as
+begin
+    declare @Bonus float;
+    if @DeptNo = 10 set @Bonus = 0.15 * @Sal;
+    else if @DeptNo = 20 set @Bonus = 0.20 * @Sal;
+    else
+        set @Bonus = 0.05 * @Sal;
+    return @Bonus;
+end;
+select empno, ename, job, deptno, sal, dbo.calcBonus(deptno, sal) as Bonus
+from dbo.emp;
+
