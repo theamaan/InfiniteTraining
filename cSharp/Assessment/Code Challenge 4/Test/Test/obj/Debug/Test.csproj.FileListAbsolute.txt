@@ -4,3 +4,4 @@ D:\InfiniteTraining\cSharp\Assessment\Code Challenge 4\Test\Test\bin\Debug\Test.
 D:\InfiniteTraining\cSharp\Assessment\Code Challenge 4\Test\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
 D:\InfiniteTraining\cSharp\Assessment\Code Challenge 4\Test\Test\obj\Debug\Test.exe
 D:\InfiniteTraining\cSharp\Assessment\Code Challenge 4\Test\Test\obj\Debug\Test.pdb
+D:\InfiniteTraining\cSharp\Assessment\Code Challenge 4\Test\Test\obj\Debug\Test.csproj.AssemblyReference.cache

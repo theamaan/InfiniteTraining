@@ -1,0 +1,45 @@
+--Q1 :- Write a T-SQL Program to find the factorial of a given number.
+
+create proc sp_CalculateFactorial
+    @Number int,
+    @Factorial bigint output
+AS
+BEGIN
+    DECLARE @Counter int;
+    SET @Factorial = 1;
+    SET @Counter = 1;
+
+    WHILE @Counter <= @Number
+    BEGIN
+        SET @Factorial = @Factorial * @Counter;
+        SET @Counter = @Counter + 1;
+    END
+END;
+GO
+
+--Q2 :- Create a stored procedure to generate multiplication table that accepts a number and generates up to a given number. 
+
+DECLARE @Result BIGINT;
+EXEC sp_CalculateFactorial @Number = 5, @Factorial = @Result OUTPUT;
+PRINT 'The factorial is ' + CAST(@Result AS VARCHAR(20));
+
+create proc sp_GenerateMultiplicationTable
+    @Number int,
+    @Limit int
+as
+begin
+    -- Declare a variable to hold the current multiplier
+    DECLARE @Multiplier INT;
+    SET @Multiplier = 1;
+
+    PRINT 'Multiplication Table for ' + CAST(@Number AS VARCHAR(10)) + ':';
+
+    WHILE @Multiplier <= @Limit
+    BEGIN
+        PRINT CAST(@Number AS VARCHAR(10)) + ' * ' + CAST(@Multiplier AS VARCHAR(10)) + ' = ' + CAST(@Number * @Multiplier AS VARCHAR(10));
+        SET @Multiplier = @Multiplier + 1;
+    END
+END;
+GO
+
+EXEC sp_GenerateMultiplicationTable @Number = 10, @Limit = 10;
