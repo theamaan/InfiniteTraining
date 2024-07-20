@@ -43,3 +43,45 @@ END;
 GO
 
 EXEC sp_GenerateMultiplicationTable @Number = 10, @Limit = 10;
+
+Q3:- Create a trigger to restrict data manipulation on EMP table during General holidays. Display the error message like “Due to Independence day you cannot manipulate data” or "Due To Diwali", you cannot manipulate" etc
+
+Note: Create holiday table as (holiday_date,Holiday_name) store at least 4 holiday details. try to match and stop manipulation 
+
+CREATE TRIGGER trg_RestrictOnHolidays
+ON EMP
+INSTEAD OF INSERT, UPDATE, DELETE
+AS
+BEGIN
+    DECLARE @Today DATE = CAST(GETDATE() AS DATE);
+    DECLARE @HolidayName VARCHAR(50);
+
+    SELECT @HolidayName = holiday_name
+    FROM Holidays
+    WHERE holiday_date = @Today;
+
+    IF @HolidayName IS NOT NULL
+    BEGIN
+        RAISERROR ('Due to %s, you cannot manipulate data', 16, 1, @HolidayName);
+        ROLLBACK TRANSACTION;
+    END
+    ELSE
+    BEGIN
+        -- Proceed with the original operation
+        IF EXISTS (SELECT * FROM inserted)
+        BEGIN
+            -- For INSERT or UPDATE operations
+            INSERT INTO EMP (EMPNO, ENAME, JOB, MGR_ID, HIREDATE, SAL, COMM, DEPTNO)
+            SELECT EMPNO, ENAME, JOB, MGR_ID, HIREDATE, SAL, COMM, DEPTNO
+            FROM inserted;
+        END
+
+        IF EXISTS (SELECT * FROM deleted)
+        BEGIN
+            -- For DELETE operations
+            DELETE FROM EMP
+            WHERE EMPNO IN (SELECT EMPNO FROM deleted);
+        END
+    END
+END;
+
