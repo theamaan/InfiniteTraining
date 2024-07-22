@@ -1,0 +1,47 @@
+CREATE PROCEDURE sp_GeneratePayslip
+    @Empno INT
+AS
+BEGIN
+    -- Declaring variables to hold the required values
+    DECLARE @EmpName VARCHAR(50);
+    DECLARE @Salary DECIMAL(10, 2);
+    DECLARE @HRA DECIMAL(10, 2);
+    DECLARE @DA DECIMAL(10, 2);
+    DECLARE @PF DECIMAL(10, 2);
+    DECLARE @IT DECIMAL(10, 2);
+    DECLARE @Deductions DECIMAL(10, 2);
+    DECLARE @GrossSalary DECIMAL(10, 2);
+    DECLARE @NetSalary DECIMAL(10, 2);
+
+    -- Fetching employee details
+    SELECT @EmpName = ENAME, @Salary = SAL
+    FROM EMP
+    WHERE EMPNO = @Empno;
+
+    -- Calculating HRA, DA, PF, and IT
+    SET @HRA = @Salary * 0.10;
+    SET @DA = @Salary * 0.20;
+    SET @PF = @Salary * 0.08;
+    SET @IT = @Salary * 0.05;
+
+    -- Calculating Deductions, Gross Salary, and Net Salary
+    SET @Deductions = @PF + @IT;
+    SET @GrossSalary = @Salary + @HRA + @DA;
+    SET @NetSalary = @GrossSalary - @Deductions;
+
+    -- Printing the payslip
+    PRINT '--- Payslip ---';
+    PRINT 'Employee Number: ' + CAST(@Empno AS VARCHAR);
+    PRINT 'Employee Name: ' + @EmpName;
+    PRINT 'Salary: ' + CAST(@Salary AS VARCHAR);
+    PRINT 'HRA: ' + CAST(@HRA AS VARCHAR);
+    PRINT 'DA: ' + CAST(@DA AS VARCHAR);
+    PRINT 'PF: ' + CAST(@PF AS VARCHAR);
+    PRINT 'IT: ' + CAST(@IT AS VARCHAR);
+    PRINT 'Deductions: ' + CAST(@Deductions AS VARCHAR);
+    PRINT 'Gross Salary: ' + CAST(@GrossSalary AS VARCHAR);
+    PRINT 'Net Salary: ' + CAST(@NetSalary AS VARCHAR);
+    PRINT '--- End of Payslip ---';
+END;
+
+EXEC sp_GeneratePayslip @Empno = 7839;
