@@ -1,0 +1,7 @@
+D:\InfiniteTraining\SQL\Assessment\SQL Challenge 2\Application\Application\bin\Debug\Application.exe.config
+D:\InfiniteTraining\SQL\Assessment\SQL Challenge 2\Application\Application\bin\Debug\Application.exe
+D:\InfiniteTraining\SQL\Assessment\SQL Challenge 2\Application\Application\bin\Debug\Application.pdb
+D:\InfiniteTraining\SQL\Assessment\SQL Challenge 2\Application\Application\obj\Debug\Application.csproj.AssemblyReference.cache
+D:\InfiniteTraining\SQL\Assessment\SQL Challenge 2\Application\Application\obj\Debug\Application.csproj.CoreCompileInputs.cache
+D:\InfiniteTraining\SQL\Assessment\SQL Challenge 2\Application\Application\obj\Debug\Application.exe
+D:\InfiniteTraining\SQL\Assessment\SQL Challenge 2\Application\Application\obj\Debug\Application.pdb

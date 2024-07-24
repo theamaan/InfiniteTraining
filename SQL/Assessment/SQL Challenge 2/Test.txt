@@ -1,0 +1,31 @@
+create database Employeemanagement
+
+create table Employee_Details (
+    Empno int primary key,
+    EmpName varchar(50) not null,
+    Empsal numeric(10,2) check (Empsal >= 25000),
+    Emptype char(1) check (Emptype IN ('F', 'P'))
+);
+
+select * from Employee_Details;
+
+INSERT INTO Employee_Details (Empno, EmpName, Empsal, Emptype) VALUES
+(1, 'Amaan Ullah', 30000.00, 'F'),
+(2, 'Abhishek Batra', 45000.50, 'P'),
+(3, 'Rajeev Singh', 25000.00, 'F');
+
+create proc addNewRows
+    @EmpName varchar(50),
+    @Empsal numeric(10,2),
+    @Emptype char(1)
+as
+begin
+    declare @NewEmpno int;
+    select @NewEmpno = isnull(max(Empno), 0) + 1 from Employee_Details;
+    insert into Employee_Details (Empno, EmpName, Empsal, Emptype)
+    values (@NewEmpno, @EmpName, @Empsal, @Emptype);
+end;
+
+exec addNewRows @EmpName = 'Sanjeev', @Empsal = 35555.90, @Emptype = 'P';
+
+Delete from Employee_Details where Empno=5;

@@ -1,0 +1,49 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\InfiniteTraining\\cSharp\\Assignment\\Assignment 4\\Solution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8BA59CB8-3C62-4769-9053-50A99F943C24}|Solution\\Solution.csproj|d:\\infinitetraining\\csharp\\assignment\\assignment 4\\solution\\solution\\scholarship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BA59CB8-3C62-4769-9053-50A99F943C24}|Solution\\Solution.csproj|solutionrelative:solution\\scholarship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Scholarship.cs",
+              "DocumentMoniker": "D:\\InfiniteTraining\\cSharp\\Assignment\\Assignment 4\\Solution\\Solution\\Scholarship.cs",
+              "RelativeDocumentMoniker": "Solution\\Scholarship.cs",
+              "ToolTip": "D:\\InfiniteTraining\\cSharp\\Assignment\\Assignment 4\\Solution\\Solution\\Scholarship.cs",
+              "RelativeToolTip": "Solution\\Scholarship.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-24T02:46:19.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{7bbe0196-eb79-4317-9140-30d7c7376db3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
