@@ -1,0 +1,7 @@
+D:\InfiniteTraining\ActiveX Data Objects for NET Framework\Assignment\Assignment 1\EmployeeAssignment\EmployeeAssignment\bin\Debug\EmployeeAssignment.exe
+D:\InfiniteTraining\ActiveX Data Objects for NET Framework\Assignment\Assignment 1\EmployeeAssignment\EmployeeAssignment\bin\Debug\EmployeeAssignment.exe.config
+D:\InfiniteTraining\ActiveX Data Objects for NET Framework\Assignment\Assignment 1\EmployeeAssignment\EmployeeAssignment\obj\Debug\EmployeeAssignment.csproj.CoreCompileInputs.cache
+D:\InfiniteTraining\ActiveX Data Objects for NET Framework\Assignment\Assignment 1\EmployeeAssignment\EmployeeAssignment\obj\Debug\EmployeeAssignment.exe
+D:\InfiniteTraining\ActiveX Data Objects for NET Framework\Assignment\Assignment 1\EmployeeAssignment\EmployeeAssignment\obj\Debug\EmployeeAssignment.pdb
+D:\InfiniteTraining\ActiveX Data Objects for NET Framework\Assignment\Assignment 1\EmployeeAssignment\EmployeeAssignment\bin\Debug\EmployeeAssignment.pdb
+D:\InfiniteTraining\ActiveX Data Objects for NET Framework\Assignment\Assignment 1\EmployeeAssignment\EmployeeAssignment\obj\Debug\EmployeeAssignment.csproj.AssemblyReference.cache

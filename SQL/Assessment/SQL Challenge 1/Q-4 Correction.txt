@@ -1,0 +1,31 @@
+--Q.4 Create table Employee with empno, ename, sal, doj columns and perform the following operations in a single transaction
+Begin transaction
+
+-- Create the table
+Create table theEmployee(
+empno int primary key,
+ename varchar(50),
+sal float ,
+doj date)
+
+--a. Firstly we are inserting 3 rows 
+
+-- Inserting the values in the table
+Insert into theEmployee values
+(0001,'Amaan Ullah',5000,'2024-07-13'),
+(0002,'Gaurav',2000,'2024-01-10'),
+(0003,'Venu', 9000, '2022-04-20')
+select * from theEmployee
+
+--b. Updating the second row sal with 15% increment   
+update theEmployee
+set sal = (sal + sal * 0.15) where empno = 2
+save tran t1
+select * from theEmployee
+
+--c. Deleting the first row
+
+delete from theEmployee where empno = 1
+select * from theEmployee
+commit  
+Select * from theEmployee where empno = 1

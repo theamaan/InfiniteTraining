@@ -5,7 +5,7 @@ select DATENAME(weekday, '2001-04-13') AS 'DaysOfWeek';
 select DATEDIFF(DAY, '2001-04-13',GETDATE()) AS 'AgeOfAmaanInDays';
 
 --Write a query to display all employees information those who joined before 5 years in the current month
- --(Hint : If required update some HireDates in your EMP table of the assignment)
+--(Hint : If required update some HireDates in your EMP table of the assignment)
  
 use infinitedatabase
 insert into dbo.emp (EMPNO, ENAME, JOB, MGR_ID, HIREDATE, COMM, DEPTNO) values
@@ -17,7 +17,7 @@ where datediff(year,hiredate,getdate())>=5 and month(hiredate) = month(getdate()
 --	a. First insert 3 rows 
 --	b. Update the second row sal with 15% increment  
 --      c. Delete first row.
---After completing above all actions how to recall the deleted row without losing increment of second row.
+--      After completing above all actions how to recall the deleted row without losing increment of second row.
 
 SELECT * FROM DBO.EMP
 insert into dbo.emp (EMPNO, ENAME, JOB, MGR_ID, HIREDATE, COMM, DEPTNO) values
