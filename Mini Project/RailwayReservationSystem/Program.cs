@@ -135,29 +135,58 @@ namespace RailwayReservationSystem
                 {
                     TrainService trainService = new TrainService(connectionString, loggedInUser);
 
-                    Console.WriteLine("Enter source station:");
-                    string source = Console.ReadLine();
-                    Console.WriteLine("Enter destination station:");
-                    string destination = Console.ReadLine();
-                    Console.WriteLine("Enter class of travel:");
-                    string classOfTravel = Console.ReadLine();
+                    Console.WriteLine("1. Search Trains");
+                    Console.WriteLine("2. Book Tickets");
+                    int userChoice = int.Parse(Console.ReadLine());
 
-                    List<Train> trains = trainService.SearchTrains(source, destination, classOfTravel);
-
-                    if (trains.Count > 0)
+                    switch (userChoice)
                     {
-                        Console.WriteLine("Available Trains:");
-                        foreach (var train in trains)
-                        {
-                            string priceFormatted = train.Price.ToString("N2", new CultureInfo("en-IN"));
-                            Console.OutputEncoding = System.Text.Encoding.UTF8;  // Ensure console supports UTF-8
-                            Console.WriteLine($"{train.TrainName} ({train.TrainNumber}) - {train.ClassOfTravel} - ₹ {priceFormatted} - {train.SeatsAvailable} seats available");
-                        }
+                        case 1:
+                            Console.WriteLine("Enter source station:");
+                            string source = Console.ReadLine();
+                            Console.WriteLine("Enter destination station:");
+                            string destination = Console.ReadLine();
+                            Console.WriteLine("Enter class of travel:");
+                            string classOfTravel = Console.ReadLine();
 
-                    }
-                    else
-                    {
-                        Console.WriteLine("No trains available for the specified criteria.");
+                            List<Train> trains = trainService.SearchTrains(source, destination, classOfTravel);
+
+                            if (trains.Count > 0)
+                            {
+                                Console.WriteLine("Available Trains:");
+                                foreach (var train in trains)
+                                {
+                                    string priceFormatted = train.Price.ToString("N2", new CultureInfo("en-IN"));
+                                    Console.OutputEncoding = System.Text.Encoding.UTF8;
+                                    Console.WriteLine($"{train.TrainName} ({train.TrainNumber}) - {train.ClassOfTravel} - ₹ {priceFormatted} - {train.SeatsAvailable} seats available");
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("No trains available for the specified criteria.");
+                            }
+                            break;
+
+                        case 2:
+                            Console.WriteLine("Enter train ID to book:");
+                            int trainId = int.Parse(Console.ReadLine());
+                            Console.WriteLine("Enter number of tickets to book (max 3):");
+                            int numberOfTickets = int.Parse(Console.ReadLine());
+
+                            try
+                            {
+                                trainService.BookTickets(trainId, numberOfTickets);
+                                Console.WriteLine("Tickets booked successfully.");
+                            }
+                            catch (Exception ex)
+                            {
+                                Console.WriteLine("An error occurred: " + ex.Message);
+                            }
+                            break;
+
+                        default:
+                            Console.WriteLine("Invalid choice.");
+                            break;
                     }
                 }
             }
