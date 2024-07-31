@@ -42,7 +42,7 @@ CREATE TABLE Cancellations (
     FOREIGN KEY (booking_id) REFERENCES Bookings(booking_id)
 );
 
-select * from dbo.Users;
+select * from Users;
 select * from dbo.Trains;
 select * from Bookings;
 select * from Cancellations;
