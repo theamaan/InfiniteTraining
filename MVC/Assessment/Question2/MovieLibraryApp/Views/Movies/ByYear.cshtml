@@ -1,0 +1,29 @@
+﻿@model IEnumerable<MovieLibraryApp.Models.Movie>
+
+@{
+    ViewBag.Title = "Movies Released in the Given Year";
+}
+
+<h2>Movies Released in the Given Year</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Director</th>
+            <th>Release Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var movie in Model)
+        {
+            <tr>
+                <td>@movie.Id</td>
+                <td>@movie.Title</td>
+                <td>@movie.Director</td>
+                <td>@movie.ReleaseDate.ToShortDateString()</td>
+            </tr>
+        }
+    </tbody>
+</table>

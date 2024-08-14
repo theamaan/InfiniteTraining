@@ -1,0 +1,29 @@
+﻿@model NorthwindMVC.Models.Customer
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Details</title>
+</head>
+<body>
+    <h2>Customer Details</h2>
+    <table>
+        <tr>
+            <th>Customer ID</th>
+            <td>@Model.CustomerID</td>
+        </tr>
+        <tr>
+            <th>Company Name</th>
+            <td>@Model.CompanyName</td>
+        </tr>
+        <tr>
+            <th>Contact Name</th>
+            <td>@Model.ContactName</td>
+        </tr>
+        <tr>
+            <th>Country</th>
+            <td>@Model.Country</td>
+        </tr>
+    </table>
+</body>
+</html>
