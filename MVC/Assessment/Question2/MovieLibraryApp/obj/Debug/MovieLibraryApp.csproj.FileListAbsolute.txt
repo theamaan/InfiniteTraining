@@ -76,6 +76,7 @@ D:\InfiniteTraining\MVC\Assessment\Question2\MovieLibraryApp\bin\System.Web.WebP
 D:\InfiniteTraining\MVC\Assessment\Question2\MovieLibraryApp\bin\Newtonsoft.Json.xml
 D:\InfiniteTraining\MVC\Assessment\Question2\MovieLibraryApp\bin\Antlr3.Runtime.pdb
 D:\InfiniteTraining\MVC\Assessment\Question2\MovieLibraryApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\InfiniteTraining\MVC\Assessment\Question2\MovieLibraryApp\obj\Debug\MovieLibraryApp.csproj.AssemblyReference.cache
 D:\InfiniteTraining\MVC\Assessment\Question2\MovieLibraryApp\obj\Debug\MovieLibraryApp.csproj.CoreCompileInputs.cache
 D:\InfiniteTraining\MVC\Assessment\Question2\MovieLibraryApp\obj\Debug\MovieLibraryApp.csproj.CopyComplete
 D:\InfiniteTraining\MVC\Assessment\Question2\MovieLibraryApp\obj\Debug\MovieLibraryApp.dll

@@ -52,7 +52,6 @@
     <Compile Include="Cancellation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Ticket.cs" />
     <Compile Include="TrainService.cs" />
     <Compile Include="UserService.cs" />
   </ItemGroup>

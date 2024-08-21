@@ -75,7 +75,7 @@ namespace MovieLibraryApp.Controllers
         }
 
         // POST: Movies/Delete/5
-        [HttpPost]
+        [HttpPost,ActionName("Delete")]
         public ActionResult DeleteConfirmed(int id)
         {
             Movie movie = db.Movies.Find(id);
